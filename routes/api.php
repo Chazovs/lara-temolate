@@ -13,7 +13,17 @@ use App\Http\Controllers\GoodController;
 |
 */
 
-Route::apiResource('/good', 'GoodController');
+/*Route::apiResource('/good', 'GoodController');*/
+
+/*Route::get('/make-user', 'Auth\RegisterController@create');
+Route::get('/login-user', 'Auth\LoginController@login');*/
+/*Route::get('/login-user', 'Auth\LoginController.php@login');*/
+Route::get('/good/index', 'GoodController@index');
+// Маршруты регистрации...
+Route::get('auth/login', 'Auth\LoginController@login');
+Route::get('auth/register', 'Auth\RegisterController@register');
+
+/*Route::get('auth/transport', 'Auth\RegisterController@transport');*/
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
