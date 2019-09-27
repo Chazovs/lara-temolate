@@ -22,10 +22,10 @@ class PlaceController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+   /* public function create()
     {
         //
-    }
+    }*/
 
     /**
      * Store a newly created resource in storage.
@@ -55,10 +55,10 @@ class PlaceController extends Controller
      * @param  \App\Place  $place
      * @return \Illuminate\Http\Response
      */
-    public function edit(Place $place)
+  /*  public function edit(Place $place)
     {
         //
-    }
+    }*/
 
     /**
      * Update the specified resource in storage.
